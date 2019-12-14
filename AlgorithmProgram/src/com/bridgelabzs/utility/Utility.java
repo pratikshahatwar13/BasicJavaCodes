@@ -285,8 +285,49 @@ public class Utility {
     		  System.out.println("Invalid month");
     	  }
       }
-      
-      
+      //(17)
+      public static void temperatureConversion(double fahrenheit)
+      {
+    	  double ctf=  (fahrenheit *9/5) + 32 ;
+    	  double ftc= (fahrenheit-32) *5/9;
+          System.out.println("temperature in Fahrenheit to Celsius is:"+ftc);
+          System.out.println("temperature in Celsius to Fahrenheit is:"+ctf);
+      }
+      //(18)
+      public static void monthlyPayment(double y,double p,double r)
+      {
+    	double n = 12 * y;
+  		double r0 = r / (12 * 100);
+  		double payment = p * r0 / (1 - Math.pow((1 + r0), -n));
+  		System.out.println("The monthly payments:"+payment);
+      }
+      //(19)
+      public static void sqrt(double c)
+      {
+    	double t = c;
+  		double epsilon = 1e-15;
+  		while (Math.abs(t - c / t) > epsilon * t) 
+  		{
+  			t = (c / t + t) / 2;
+        }
+			System.out.println("The square root of nonnegative number is:"+t);
+      }
+      //(20)
+      public static void toBinary(int dec)
+      {
+    	  int[] arr=new int[32];
+    	  int i=0;
+    	  while(dec>0)
+    	  {
+    		  arr[i]=dec%2;
+    		  dec=dec/2;
+    		  i++;
+    	  }
+    	  System.out.println("Conversion of decimal number into the binary:");
+    	  for(int j=i-1;j>=0;j--)
+    	  {
+    		  System.out.print(arr[j]+" ");
+    	  }
+      }
+	  
 }
-
-
