@@ -21,14 +21,14 @@ public class Utility {
       public static long longInput() {
     	  return scn.nextLong();
       }
-      //(1)
+      
       public static void replaceString(String Input)
       {
     	
 		String Output=Input.replaceAll("UserName", "Pratiksha");
 		System.out.println(Output);
       }
-       //(2)
+     
       public static void flipCoin(int chance)
       {
     	  int n;
@@ -57,7 +57,7 @@ public class Utility {
     			System.out.println("Percentage of tail are:"+t);
 
       }
-      //(3)
+      
       public static void leapYear(int year)
       {
     	  if((year%4==0 && year%100!=0) || year%400==0)
@@ -65,7 +65,7 @@ public class Utility {
   		else 
   			System.out.println(year+" "+"is not a leap year");
       }
-      //(4)
+      
       public static void powerOfTwo(int n)
       {
     	  for(int i=0;i<=n;i++)
@@ -74,7 +74,7 @@ public class Utility {
           	System.out.println("The power of two is:"+res);
           }
       }
-      //(5)
+      
       public static void harmonicNumber(int n)
       {
     	  double H=0;
@@ -87,7 +87,7 @@ public class Utility {
   		System.out.println();
   		System.out.println("The Harmonic number series addition is:"+H);
       }
-      //(6)
+      
       public static void primeFactorization(int n)
       {
     	int count=0;
@@ -100,7 +100,7 @@ public class Utility {
   				}
   		}
       }
-      //(7)
+      
       public static void twoDimensionalArray(int rows,int column)
       {
     	  //String elements in matrix
@@ -126,9 +126,11 @@ public class Utility {
   	        System.out.println();
   		}
       }
-      //(8)
+      
       public static void threeNumbersAddToZero()
       {
+    	  
+    	  
     	  int[] arr= {2,-2,7,5,-7,-5,0};
 			int count=0;
 	        for(int i=0;i<arr.length-2;i++)
@@ -149,14 +151,14 @@ public class Utility {
 	        }
 	        System.out.println("The total count of the numbers are:"+count);
 		}
-      //(9)
+      
       public static void distance(int x,int y)
       {
     	double distance;
   		distance = Math.sqrt(x*x + y*y);
   		System.out.println("The Euclidean distance from the point (x, y) to the origin (0, 0) is:"+distance);
       }
-      //(10)
+      
       public static void quadratic(double a,double b,double c)
       {
     	  double root1,root2;
@@ -173,7 +175,7 @@ public class Utility {
              System.out.println("Root is :: "+(-b + sqrt)/(2*a));
           }
       }
-      //(11)
+      
       public static void windChill(double t,double v)
       {
     	  double w = 35.74 + 0.6215*t + (0.4275*t - 35.75) * Math.pow(v, 0.16);
@@ -181,7 +183,7 @@ public class Utility {
           System.out.println("Wind speed in miles per hour = " + v);
           System.out.println("Wind chill  = " + w);
       }
-      //(12)
+      
       public static void gambler(int stake,int goal,int trials)
       {
     	  int bets = 0;        
@@ -210,7 +212,7 @@ public class Utility {
           System.out.println("Percent of games won = " + 100.0 * wins / trials);
           System.out.println("Avg # bets           = " + 1.0 * bets / trials);
       }
-      //(13)
+      
       public static void couponNumber()
       {
     	char[] chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789".toCharArray();
@@ -227,7 +229,7 @@ public class Utility {
   		String couponCode=sb.toString();
   		System.out.println("Coupon Code: "+couponCode);	
       }
-      //(14)
+      
       public static void stopWatch() throws InterruptedException
       {
     	 double startTime;
@@ -240,7 +242,7 @@ public class Utility {
          double elapsedTime=(stopTime-startTime);
          System.out.println("Elapsed time is:"+elapsedTime);
       }
-      //(15)
+      
        static int[] notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
        static int i;
        static int total;
@@ -258,7 +260,7 @@ public class Utility {
   		}
         vendingMachine(value);
       }
-      //(16)
+      
       public static void dayOfWeek(int day,int month,int year)
       {
     	  int y0=(int) (year- Math.floor((14-month)/12));
@@ -285,7 +287,7 @@ public class Utility {
     		  System.out.println("Invalid month");
     	  }
       }
-      //(17)
+      
       public static void temperatureConversion(double fahrenheit)
       {
     	  double ctf=  (fahrenheit *9/5) + 32 ;
@@ -293,7 +295,7 @@ public class Utility {
           System.out.println("temperature in Fahrenheit to Celsius is:"+ftc);
           System.out.println("temperature in Celsius to Fahrenheit is:"+ctf);
       }
-      //(18)
+      
       public static void monthlyPayment(double y,double p,double r)
       {
     	double n = 12 * y;
@@ -301,7 +303,7 @@ public class Utility {
   		double payment = p * r0 / (1 - Math.pow((1 + r0), -n));
   		System.out.println("The monthly payments:"+payment);
       }
-      //(19)
+      
       public static void sqrt(double c)
       {
     	double t = c;
@@ -312,7 +314,7 @@ public class Utility {
         }
 			System.out.println("The square root of nonnegative number is:"+t);
       }
-      //(20)
+      
       public static void toBinary(int dec)
       {
     	  int[] arr=new int[32];
@@ -329,5 +331,4 @@ public class Utility {
     		  System.out.print(arr[j]+" ");
     	  }
       }
-	  
 }

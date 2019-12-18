@@ -1,10 +1,13 @@
 package com.bridgelabzs.regularexp;
 
-public class UserDetails {
+public class UserDetails{
 	private String fName;
 	private String lName;
 	private String mobileNo;
 	private String date;
+
+	public UserDetails(){
+	}
 
 	public void setfName(String fName){
 		this.fName=fName;
@@ -13,8 +16,9 @@ public class UserDetails {
 	public void setlName(String lName){
 		this.lName=lName;
 	}
-	public void setmobileNo(String i){
-		this.mobileNo=i;
+
+	public void setmobileNo(String mobileNo){
+		this.mobileNo=mobileNo;
 	}
 
 	public void setdate(String date){
