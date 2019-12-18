@@ -16,6 +16,22 @@ public class Utility{
 		bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 	}
 	
+	/*
+	public String getFileText(String fileName){
+		File file = new File(fileName);
+		if (!file.exists()) {
+      			System.out.println(fileName + " does not exist.");
+      			return "1 Conditon satisfied";
+    		}
+    		if (!(file.isFile() && file.canRead())) {
+      			System.out.println(file.getName() + " cannot be read from.");
+      			return "2 Conditon satisfied";
+    		}
+		return "All Conditon satisfied";
+	}
+	**/
+
+
 	//take input word
 	public String inputWord(){
 		try{
@@ -26,6 +42,7 @@ public class Utility{
 		}
 		return "";
 	}
+	
 	public String getFileText(String fileName){
 
 		try{
